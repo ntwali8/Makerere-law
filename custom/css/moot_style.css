@@ -1,0 +1,211 @@
+.contain {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 10px;
+    background-color: rgb(185, 184, 184);
+}
+
+.cust-item {
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 8px rgb(160, 139, 85) solid;
+    font-family:sans-serif;
+    font-size: 25px;
+    font-weight:normal;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    background-color: rgb(185, 184, 184);
+}
+span{
+    display:inline-block;
+    border-bottom: 8px solid rgb(160, 139, 85);
+    padding-bottom: 2px;
+}
+.cust-item, a {
+    color:black;
+}
+.cust-item, a:hover {
+    color:rgb(221, 188, 96);
+}
+.jumb-image {
+    position: absolute;
+    height:460px;
+    margin-top: -55px;
+    margin-left:-125px;
+}
+.jumb-heading{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 5em;
+    letter-spacing: -2px;
+    color: white;
+    border-bottom: 8px solid rgb(160, 139, 85);
+    position: absolute;
+    top: 200px;
+    right: 30%;
+}
+.cabinet {
+    background-color: rgb(216, 200, 180);
+}
+.image_moot {
+    width: 85%;
+    padding-left: 2%;
+}
+
+/* screen :: 1400px */
+@media (min-width: 1400px){
+    .jumb-image {
+        position: absolute;
+        height:400px;
+        margin-top: -40px;
+        margin-left:-80px;
+    }
+}
+
+/* for screen size :: 992px to 1024px */
+@media (max-width: 1024px) {
+    .jumb-image {
+        position: absolute;
+        height:400px;
+        margin-top: -40px;
+        margin-left:-80px;
+    }
+    .jumb-heading{
+        top: 15%;
+        right: auto;
+        left: 15%;
+        font-size: 4.5rem;
+    }
+    .image_moot {
+        width: 85%;
+        height: auto;
+        padding-left: 2%;
+    }
+}
+
+/* for the screen size :: 992px */
+@media (max-width: 991px) {
+    .jumb-image {
+        position: absolute;
+        height:400px;
+        margin-top: -40px;
+        margin-left:-140px;
+    }
+    .jumb-heading{
+        top: 25%;
+        right: auto;
+        left: 15%;
+        font-size: 4rem;
+    }
+    .image_moot {
+        width: 85%;
+        height: auto;
+        padding-left: 2%;
+    }
+}
+
+/* for tablet screens :: 962px */
+@media (max-width: 962px) {
+    .jumb-heading{
+        top: 25%;
+        right: auto;
+        left: 15%;
+        font-size: 4.3rem;
+    }
+    .jumb-image {
+        position: absolute;
+        height:400px;
+        margin-top: -40px;
+        margin-left:-140px;
+    }
+    .image_moot {
+        width: 85%;
+        height: auto;
+        padding-left: 2%;
+    }
+}
+
+/* for the lady of justice :: 768px to 800 */
+@media (max-width: 800px) and (min-width: 768px) {
+    .jumb-image {
+        position: absolute;
+        height: 400px;
+        margin-top: -40px;
+        margin-left:-65px;
+    }
+    .jumb-heading{
+        top: 25%;
+        right: auto;
+        left: 15%;
+        font-size: 4rem;
+        border: 0px;
+    }
+}
+
+/* for the law of fame columns */
+@media (max-width: 953px) and (min-width: 768px) {
+    .col-sm-6 {
+        width: 200px;
+    }
+}
+
+/* for tablet screen :: 767px */
+@media (max-width: 767px) {
+    .jumb-image {
+        position: absolute;
+        height: 400px;
+        margin-top: -40px;
+        margin-left:-120px;
+    }
+    .jumb-heading{
+        top: 25%;
+        right: auto;
+        left: 20%;
+        font-size: 4rem;
+        border: 0px;
+    }
+}
+
+/* for tablet screens :: 640px */
+@media (max-width: 640px) {
+    .jumb-image {
+        position: absolute;
+        height:400px;
+        margin-top: -40px;
+        margin-left:-70px;
+    }
+    .jumb-heading{
+        top: 25%;
+        right: auto;
+        left: 20%;
+        border: 0px;
+        font-size: 4rem;
+    }
+    .image_moot {
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+
+/* for small screens :: 450px */
+@media (max-width: 450px) {
+    .image_moot {
+        width: 300px;
+        padding-left: 10px;
+    }
+    .jumb-image {
+        position: absolute;
+        height:400px;
+        margin-top: -50px;
+        margin-left:-55px;
+    }
+    .jumb-heading{
+        top: 200px;
+        right: auto;
+        left: 40px;
+        border: 0px;
+        font-size: 3rem;
+    }
+}

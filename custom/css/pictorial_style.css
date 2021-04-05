@@ -1,0 +1,42 @@
+img {
+    width: 350px;
+}
+@media (max-width: 600px) {
+    img {
+        width: 320px;
+    }
+}
+@media (min-width: 400px) {
+    img {
+        width: 400px;
+    }
+}
+@media (min-width: 600px) {
+    img {
+        width: 360px;
+    }
+}
+@media (min-width: 768px) {
+    img {
+        width: 350px;
+    }
+}
+@media (min-width: 992px) {
+    img {
+        width: 460px;
+    }
+}
+@media (min-width: 1200px) {
+    img {
+        width: 400px;
+    }
+}
+.photo {
+    margin: 10px;
+    border: 1px #ccc solid;
+    box-shadow: #ccc;
+    background-color: #fff;
+}
+.grid {
+    margin: 0 auto;
+}

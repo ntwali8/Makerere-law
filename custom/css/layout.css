@@ -1,0 +1,21 @@
+.top_slanted {
+    height: 400px;
+    background-color: black;
+    clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.slanted {
+    height: 600px;
+    background-color: black;
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.bottom_slanted {
+    height: 400px;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 45% 100%);
+}
+
+.contain {
+    margin-left: 20px;
+}

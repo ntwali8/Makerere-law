@@ -1,0 +1,13 @@
+body {
+    overflow-x: hidden;
+}
+
+.card {
+    padding: 5px;
+    background-color: rgb(247, 247, 247);
+}
+
+.pres-style {
+    border: solid rgb(247, 247, 247);
+    background-color: rgb(247, 247, 247);
+}
