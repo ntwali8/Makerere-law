@@ -1,17 +1,38 @@
+body {
+    overflow-x: hidden;
+    margin: 20px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.slant-card {
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+.second-slant-card {
+    clip-path: polygon(21% 1%, 100% 0, 100% 100%, 18% 100%, 0 49%);
+    height: 500px;   
+}
+
+.third-slant-card {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 28% 100%);
+    height: 300px;
+}
+
 .cust-item {
     border-top: 0px;
     border-right: 0px;
     border-bottom: 0px;
-    border-left: 2px black solid;
-    font-family:sans-serif;
+    border-left: 7px black solid;
+    font-family: sans-serif;
     font-size: 25px;
-    font-weight:normal;
+    font-weight: normal;
     padding-left: 0px;
     padding-bottom: 10px;
 }
 span{
     display:inline-block;
-    border-bottom: 2px solid black;
+    border-bottom: 7px solid black;
     padding-bottom: 2px;
 }
 .cust-item, a {
