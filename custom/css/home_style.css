@@ -1,24 +1,39 @@
+/* Body css */
 body {
     overflow-x: hidden;
     margin: 20px;
     margin-right: 0px;
     margin-top: 0px;
 }
-
+/*Slanted divs*/
 .slant-card {
-    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(28% 0, 100% 0%, 100% 100%, 0 100%);
+    height: 300px;
+}
+
+.black_bg {
+    background-color: black;
+}
+
+.col-md-6-5 {
+    width: 54,1.16667%;
 }
 
 .second-slant-card {
     clip-path: polygon(21% 1%, 100% 0, 100% 100%, 18% 100%, 0 49%);
-    height: 500px;   
+    height: 500px;
 }
 
 .third-slant-card {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 28% 100%);
     height: 300px;
 }
-
+/* Quotation card */
+.card-img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* nav-bar list */
 .cust-item {
     border-top: 0px;
     border-right: 0px;
@@ -41,3 +56,30 @@ span{
 .cust-item, a:hover {
     color:burlywood;
 }
+
+.quote {
+    margin-top: -90px;
+}
+
+/*Css for smaller screen sizes*/
+@media screen and (max-width: 1024px){
+    .slant-card {
+        display: none;
+    }
+    body {
+        background-color: #f0f0f0;
+    }
+    .blank {
+        display: none;
+    }.second-slant-card {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        height: auto;
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+    .quote {
+        margin-top: 0px;
+    }
+}
+
