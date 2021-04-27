@@ -3,16 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
+    <!-- Bootstrap and custom CSS only -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="custom/css/home_style.css">
+    <!-- Fontawesome fonts -->
+    <script src="https://kit.fontawesome.com/a82a629338.js" crossorigin="anonymous"></script>
+    
     <title>Home</title>
 </head>
 <body>
-    <div class="row align-items-end mb-2" style="background-color:rgb(211, 211, 206);">
+    <!-- About-us Modal -->
+    <div class="modal fade" id="aboutUs" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">About Us!</h5>
+                    <!--<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>-->
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis mollitia obcaecati quaerat perspiciatis totam corrupti dolor reiciendis quis sunt 
+                        blanditiis, odit dolorem.
+                        Aliquam assumenda placeat fugiat beatae reprehenderit quidem ea?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis mollitia obcaecati quaerat perspiciatis totam corrupti dolor reiciendis quis sunt 
+                        blanditiis, odit dolorem.
+                        Aliquam assumenda placeat fugiat beatae reprehenderit quidem ea?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis mollitia obcaecati quaerat perspiciatis totam corrupti dolor reiciendis quis sunt 
+                        blanditiis, odit dolorem.
+                        Aliquam assumenda placeat fugiat beatae reprehenderit quidem ea?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis mollitia obcaecati quaerat perspiciatis totam corrupti dolor reiciendis quis sunt 
+                        blanditiis, odit dolorem.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content for the body -->
+    <div class="row align-items-end mb-2">
         <!--Jumbtron -->
-        <div class="col-md-6">
+        <div class="col-md-5"  style="background-color:rgb(211, 211, 206);">
             <div class="jumbotron">
                 <div>
                     <h1>MAKERERE</h1>
@@ -20,28 +57,31 @@
                 </div>
             </div>
         </div>
-        <!--Intro -->
-        <div class="col-md-6 slant-card d-sm-none d-md-block">
-            <img class="img-responsive" src="images/back.jpg" alt="" width="100%">
+        <div class="col-md-6 col-md-6-5 slant-card black_bg">
+            <!-- <img class="img-responsive" src="images/back.jpg" alt="" width="100%"> -->
         </div>
     </div>
+    <!-- Section for the nav bar -->
     <div class="row align-items-center mb-2">
         <!--Nav bar-->
         <div class="col-md-5">
             <ul class="list-group">
-                <li class="list-group-item cust-item"><a href=""><span>&nbsp;&nbsp;About us</span></a></li>
-                <li class="list-group-item cust-item"><a href=""><span>&nbsp;&nbsp;MLS Cabinet</span></a></li>
+                <li class="list-group-item cust-item"><a href="#" data-toggle="modal" data-target="#aboutUs">
+                    <span>&nbsp;&nbsp;About us</span></a>
+                </li>
+                <li class="list-group-item cust-item"><a href="cabinet.html"><span>&nbsp;&nbsp;MLS Cabinet</span></a></li>
                 <li class="list-group-item cust-item"><a href="moot.html"><span>&nbsp;&nbsp;Makerere Moot Society</span></a></li>
                 <li class="list-group-item cust-item"><a href="event.html"><span>&nbsp;&nbsp;Events</span></a></li>
-                <li class="list-group-item cust-item" style="border-bottom: 7px black solid;"><span></span></a></li>
-                <li class="list-group-item cust-item"><br></li>
+                <li class="list-group-item cust-item blank" style="border-bottom: 7px black solid;"><span></span></a></li>
+                <li class="list-group-item cust-item blank"><br></li>
             </ul>
         </div>
         <!--Events carousel-->
-        <div class="col-md-7 second-slant-card">
-            <img src="images/back.jpg" alt="" width="100%">
+        <div class="col-md-7 second-slant-card black_bg">
+            <!-- <img src="images/back.jpg" alt="" width="100%"> -->
         </div>
     </div>
+    <!-- Section for the Makerere links and Quote -->
     <div class="row">
         <!--Links and Quote-->
         <div class="col-md-6">
@@ -58,7 +98,7 @@
                 </div>
                 <!--Quote card-->
                 <div class="col-md-6 justify-content-center">
-                    <div class="card" style="margin-top: -90px;">
+                    <div class="card quote">
                         <h2 class="card-title center">Quote</h2>
                         <img src="images/back.jpg" class="card-img" alt="..." height="150px">
                         <div class="card-body">
@@ -73,15 +113,32 @@
             </div>
         </div>
         <!--Pictorial link-->
-        <div class="col-md-6 third-slant-card">
-            <img src="images/back.jpg" alt="" width="100%">
+        <div class="col-md-6 third-slant-card black_bg">
+            <!-- <img src="images/back.jpg" alt="" width="100%"> -->
         </div>
     </div>
     <div class="row justify-content-end">
-        <div class="col-md-3 col-xs-5" style="background-color: black">
-            <p>this is for social media icons</p>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </div>
+                <div class="col">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </div>
+                <div class="col">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Activate the modal js -->
+    <script type="text/javascript">
+        $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').trigger('focus')
+        })
+    </script>
 
     <!-- JavaScript Bundle with Popper and Jquery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
