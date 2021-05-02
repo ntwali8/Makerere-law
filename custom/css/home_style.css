@@ -5,29 +5,38 @@ body {
     margin-right: 0px;
     margin-top: 0px;
 }
+.muk-head {
+    background-color: rgb(211, 211, 206);
+    height: 380px;
+}
 
 /*Slanted divs*/
 .slant-card {
     clip-path: polygon(28% 0, 100% 0%, 100% 100%, 0 100%);
-    height: 400px;
+    height: 380px;
+    padding: 0px;
 }
 
 .second-slant-card {
-    clip-path: polygon(18% 1%, 100% 0, 100% 100%, 18% 100%, 1% 49%);
-    height: 500px;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 50%);
+    height: 450px;
+    padding: 0px;
+    margin-left: -13px;
 }
 
 .third-slant-card {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 18% 100%);
     height: 300px;
+    padding: 0px;
 }
+
 /* Quotation card */
 .card-img {
     padding-left: 15px;
     padding-right: 15px;
 }
 /* nav-bar list */
-.cust-item {
+.cust-item { 
     border-top: 0px;
     border-right: 0px;
     border-bottom: 0px;
@@ -38,6 +47,7 @@ body {
     padding-left: 0px;
     padding-bottom: 10px;
 }
+
 span{
     display:inline-block;
     border-bottom: 7px solid black;
@@ -51,21 +61,52 @@ span{
 }
 
 .quote {
-    margin-top: -90px;
+    margin-top: -115px;
 }
 
-/*Css for smaller screen sizes*/
-@media screen and (max-width: 1024px){
-    .slant-card {
-        display: none;
+/*For small phone screen sizes*/
+@media screen and (max-width: 576px) {
+    .third-slant-card {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-    body {
-        background-color: #f0f0f0;
+    .second-slant-card {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        height: auto;
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .muk-head {
+        height: 300px;
+    }
+    .quote {
+        margin-top: 0px;
     }
     .blank {
         display: none;
-    }.second-slant-card {
+    }
+    .slant-card {
+        display: none;
+    }
+    .card-text {
+        font-size: 20px;
+    }
+    .muk-links {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .slant-card {
+        display: none;
+    }
+    .third-slant-card {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .second-slant-card {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
         height: auto;
         width: 100%;
         margin-top: 15px;
@@ -73,5 +114,14 @@ span{
     }
     .quote {
         margin-top: 0px;
+    }
+    .blank {
+        display: none;
+    }
+    .card-text {
+        font-size: 20px;
+    }
+    .muk-links {
+        font-size: 20px;
     }
 }

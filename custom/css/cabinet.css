@@ -11,3 +11,22 @@ body {
     border: solid rgb(247, 247, 247);
     background-color: rgb(247, 247, 247);
 }
+.header1 {
+	height: 400px;
+}
+.muk-head {
+	color: white;
+	margin-left: 50px;
+	padding-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+	.muk-head {
+		margin-left: 10px;
+	}
+	.header1 {
+		height: 250px;
+	}
+	h1 {
+		font-size: 30px;
+	}
+}
