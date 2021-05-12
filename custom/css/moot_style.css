@@ -144,13 +144,6 @@ span{
     }
 }
 
-/* for the law of fame columns */
-@media (max-width: 953px) and (min-width: 768px) {
-    .col-sm-6 {
-        width: 200px;
-    }
-}
-
 /* for tablet screen :: 767px */
 @media (max-width: 767px) {
     .jumb-image {

@@ -2,6 +2,11 @@ body {
     overflow-x: hidden;
 }
 
+.jumbotron {
+	background-image: url('images/back.jpg');
+	border-radius: 0px;
+}
+
 .card {
     padding: 5px;
     background-color: rgb(247, 247, 247);
